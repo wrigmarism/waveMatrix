@@ -11,7 +11,7 @@ function createMatrix(size){
 }
 
 function clickEvent(count, reset, trigger){
-    triggered = getRandomInt(13, 43)
+    triggered = getRandomInt(21, 43)
     if (trigger == triggered){
         window.location.href = 'symbol.html';
     }
