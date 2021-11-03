@@ -13,7 +13,6 @@
     <div id="matrix"></div>
     <script>
         let reset = true;
-        trigger = 0
         size = 9
         var matrix = createMatrix(size)
         count = 1
@@ -26,8 +25,8 @@
                 document.getElementById("matrix").innerHTML += "</div>"
 
         });
+        symbol()
         </script>
-
-    <button onclick="trigger++; clickEvent(size*3, reset, trigger); reset = !reset;">X</button>
+    <a href="index.html"><button>X</button></a>
 </body>
 </html>
