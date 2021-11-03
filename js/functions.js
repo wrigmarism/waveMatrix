@@ -2,7 +2,7 @@ function createMatrix(size){
     var matrix = []
     for (i = 0; i < size; i++) {
         var row = []
-        for (j = 0; j < (size*1.8); j++) {
+        for (j = 0; j < (size*1.6); j++) {
             row[j] = [(j+i), "■"]
         }
         matrix[i] = row        
