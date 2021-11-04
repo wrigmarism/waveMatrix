@@ -11,9 +11,9 @@ function createMatrix(size){
 }
 
 function clickEvent(count, reset, trigger){
-    triggered = getRandomInt(21, 43)
+    triggered = getRandomInt(13, 43)
     if (trigger == triggered){
-        window.location.href = 'symbol.html';
+        window.location.href = 'punsch.html';
     }
     if(reset){
         for (let i = 0; i < count; i++){
@@ -60,6 +60,30 @@ function symbol(){
     }
     for(i = 0; i < white.length; i++){
         document.getElementById(white[i]).style.color="white"
+    }
+}
+
+function punsch(){
+    gold = ["i12","i13","i14","i23","i34","i35","i36","i45","i46","i47",
+            "i55","i56","i58","i59","i66","i68","i610","i612","i613",
+            "i614","i615","i616","i617","i618","i77",
+            "i711","i713","i714","i715","i716","i717","i718","i720",
+            "i88","i89","i810","i811","i812","i814","i815","i816",
+            "i817","i818","i819","i820","i99","i910","i911","i912",
+            "i913","i916","i917","i918","i919"]
+
+    white = ["i23","i24","i25","i78","i79","i710"]
+
+    blue = ["i57","i67","i69",]
+
+    for(i = 0; i < gold.length; i++){
+        document.getElementById(gold[i]).style.color="gold"
+    }
+    for(i = 0; i < white.length; i++){
+        document.getElementById(white[i]).style.color="white"
+    }
+    for(i = 0; i < blue.length; i++){
+        document.getElementById(blue[i]).style.color="blue"
     }
 }
 
